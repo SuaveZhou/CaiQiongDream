@@ -1,0 +1,84 @@
+/* 产品展示样式 */
+.featured-products {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* 文化特色介绍样式 */
+.culture-intro {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    background-image: url('../images/pattern-bg.png');
+    background-size: 200px;
+    background-repeat: repeat;
+}
+
+.culture-intro .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.culture-content {
+    flex: 1;
+}
+
+.culture-content h2 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.culture-content p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.culture-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* 品牌理念样式 */
+.brand-philosophy {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.philosophy-item {
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s;
+}
+
+.philosophy-item:hover {
+    transform: translateY(-10px);
+}
+
+.philosophy-item i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.philosophy-item h3 {
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}

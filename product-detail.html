@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>传统黎锦桌布 - 黎藤焕彩·爱心织梦</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>黎藤焕彩·爱心织梦</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="products.html" class="active">产品分类</a></li>
+                    <li><a href="about.html">黎族文化</a></li>
+                    <li><a href="about.html#team">团队介绍</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 产品详情 -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">首页</a> &gt;
+                <a href="products.html">产品分类</a> &gt;
+                <a href="products.html?category=textile">黎锦织物</a> &gt;
+                <span>传统黎锦香囊</span>
+            </div>
+
+            <div class="product-content">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="images/product1.jpg" alt="传统黎锦香囊" id="main-product-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="images/product1.jpg" alt="传统黎锦香囊 正面" class="active" onclick="changeImage(this)">
+                        <img src="images/product1.jpg" alt="传统黎锦香囊 细节" onclick="changeImage(this)">
+                        <img src="images/product1.jpg" alt="传统黎锦香囊 使用场景" onclick="changeImage(this)">
+                        <img src="images/product1.jpg" alt="传统黎锦香囊 工艺展示" onclick="changeImage(this)">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h1>传统黎锦香囊</h1>
+                    <div class="product-meta">
+                        <span class="product-category">分类: <a href="products.html?category=textile">黎锦织物</a></span>
+                        <span class="product-code">产品编号: LJ-TB-001</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="current-price">¥66</span>
+                        <span class="original-price">¥99</span>
+                        <span class="discount">限时优惠</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>这款传统黎锦香囊采用海南黎族传统工艺手工编织而成，图案寓意丰收与吉祥。每一件作品都由黎族织锦传承人精心制作，保留了黎锦的传统特色和文化内涵。</p>
+                        <p>黎锦是中国国家级非物质文化遗产，有着数千年的历史。这款香囊不仅是实用的家居装饰品，更是一件具有收藏价值的艺术品。</p>
+                    </div>
+
+                    <div class="product-attributes">
+                        <div class="attribute">
+                            <span class="attribute-name">材质:</span>
+                            <span class="attribute-value">纯棉</span>
+                        </div>
+                        <div class="attribute">
+                            <span class="attribute-name">尺寸:</span>
+                            <span class="attribute-value">120cm × 120cm</span>
+                        </div>
+                        <div class="attribute">
+                            <span class="attribute-name">工艺:</span>
+                            <span class="attribute-value">传统手工织造</span>
+                        </div>
+                        <div class="attribute">
+                            <span class="attribute-name">产地:</span>
+                            <span class="attribute-value">海南省保亭黎族苗族自治县</span>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus" onclick="decreaseQuantity()">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button class="quantity-btn plus" onclick="increaseQuantity()">+</button>
+                        </div>
+
+                        <button class="btn add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> 加入购物车
+                        </button>
+
+                        <button class="btn-outline buy-now">
+                            立即购买
+                        </button>
+                    </div>
+
+                    <div class="product-share">
+                        <span>分享到:</span>
+                        <a href="#" class="social-icon"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 产品详情标签页 -->
+            <div class="product-tabs">
+                <div class="tab-header">
+                    <button class="tab-btn active" data-tab="details">产品详情</button>
+                    <button class="tab-btn" data-tab="specs">规格参数</button>
+                    <button class="tab-btn" data-tab="culture">文化背景</button>
+                    <button class="tab-btn" data-tab="reviews">用户评价</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="details">
+                        <div class="detail-content">
+                            <h3>产品详情</h3>
+                            <div class="detail-images">
+                                <img src="images/product1.jpg" alt="黎锦香囊详情">
+                                <img src="images/product1.jpg" alt="黎锦香囊工艺">
+                            </div>
+                            <div class="detail-text">
+                                <h4>黎锦工艺</h4>
+                                <p>黎锦是黎族人民在长期的生产生活实践中创造的一种纺染织绣工艺的总称，包括纺线、染色、织锦、绣花等工序。黎锦织造技艺于2009年被列入联合国教科文组织人类非物质文化遗产代表作名录。
+                                </p>
+
+                                <h4>图案寓意</h4>
+                                <p>这款黎锦香囊的图案融合了传统的几何纹样和自然元素，中心图案代表丰收与富足，四周环绕的纹样象征着家庭和睦、生活美满。每一个图案都蕴含着黎族人民对美好生活的向往。</p>
+
+                                <h4>使用与保养</h4>
+                                <p>建议手洗，水温不超过30℃，不可漂白，不可熨烫，阴凉处晾干。长期存放时，请保持干燥，避免阳光直射。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="specs">
+                        <div class="specs-content">
+                            <h3>规格参数</h3>
+                            <table class="specs-table">
+                                <tr>
+                                    <th>产品名称</th>
+                                    <td>传统黎锦香囊</td>
+                                </tr>
+                                <tr>
+                                    <th>产品编号</th>
+                                    <td>LJ-TB-001</td>
+                                </tr>
+                                <tr>
+                                    <th>材质</th>
+                                    <td>纯棉</td>
+                                </tr>
+                                <tr>
+                                    <th>尺寸</th>
+                                    <td>120cm × 120cm</td>
+                                </tr>
+                                <tr>
+                                    <th>重量</th>
+                                    <td>约450g</td>
+                                </tr>
+                                <tr>
+                                    <th>工艺</th>
+                                    <td>传统手工织造</td>
+                                </tr>
+                                <tr>
+                                    <th>产地</th>
+                                    <td>海南省保亭黎族苗族自治县</td>
+                                </tr>
+                                <tr>
+                                    <th>制作周期</th>
+                                    <td>约15天</td>
+                                </tr>
+                                <tr>
+                                    <th>包装方式</th>
+                                    <td>精美礼盒包装</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="culture">
+                        <div class="culture-content">
+                            <h3>黎锦文化背景</h3>
+                            <div class="culture-image">
+                                <img src="images/li-culture.jpg" alt="黎锦文化">
+                            </div>
+                            <div class="culture-text">
+                                <p>黎锦是黎族人民在长期的生产生活实践中创造的一种纺染织绣工艺的总称，是中国最古老的纺织技艺之一，有着4000多年的历史。黎锦织造技艺于2009年被列入联合国教科文组织人类非物质文化遗产代表作名录。
+                                </p>
+
+                                <p>黎锦的织造工艺复杂，包括纺线、染色、织锦、绣花等多道工序。传统黎锦使用的原料主要是棉花和苎麻，染料则来自于当地的植物，如板蓝根、黄栀子等。黎锦的图案丰富多彩，主要有几何纹、动物纹和植物纹三大类，每一种图案都有其特定的寓意和象征。
+                                </p>
+
+                                <p>在黎族社会中，黎锦不仅是日常生活用品，更是一种文化符号和艺术表达方式。黎族妇女通过黎锦记录生活、表达情感，黎锦也成为黎族人民智慧和创造力的见证。</p>
+
+                                <p>如今，黎锦作为一种珍贵的文化遗产，正在被更多人所了解和欣赏。我们希望通过这些产品，让更多人感受到黎锦的魅力，同时也为黎锦文化的传承和发展贡献一份力量。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="reviews">
+                        <div class="reviews-content">
+                            <h3>用户评价 <span class="review-count">(12条)</span></h3>
+
+                            <div class="review-summary">
+                                <div class="rating-overall">
+                                    <span class="rating-number">4.8</span>
+                                    <div class="rating-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="rating-text">基于12条评价</span>
+                                </div>
+
+                                <div class="rating-breakdown">
+                                    <div class="rating-item">
+                                        <span class="rating-label">5星</span>
+                                        <div class="rating-bar">
+                                            <div class="rating-fill" style="width: 80%;"></div>
+                                        </div>
+                                        <span class="rating-percent">80%</span>
+                                    </div>
+                                    <div class="rating-item">
+                                        <span class="rating-label">4星</span>
+                                        <div class="rating-bar">
+                                            <div class="rating-fill" style="width: 15%;"></div>
+                                        </div>
+                                        <span class="rating-percent">15%</span>
+                                    </div>
+                                    <div class="rating-item">
+                                        <span class="rating-label">3星</span>
+                                        <div class="rating-bar">
+                                            <div class="rating-fill" style="width: 5%;"></div>
+                                        </div>
+                                        <span class="rating-percent">5%</span>
+                                    </div>
+                                    <div class="rating-item">
+                                        <span class="rating-label">2星</span>
+                                        <div class="rating-bar">
+                                            <div class="rating-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <span class="rating-percent">0%</span>
+                                    </div>
+                                    <div class="rating-item">
+                                        <span class="rating-label">1星</span>
+                                        <div class="rating-bar">
+                                            <div class="rating-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <span class="rating-percent">0%</span>

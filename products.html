@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品分类 - 黎藤焕彩·爱心织梦</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>黎藤焕彩·爱心织梦</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="products.html" class="active">产品分类</a></li>
+                    <li><a href="about.html">黎族文化</a></li>
+                    <li><a href="about.html#team">团队介绍</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 产品分类页面标题 -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>黎族文化产品</h1>
+            <p>传统工艺与现代设计的完美融合</p>
+        </div>
+    </section>
+
+    <!-- 产品分类筛选 -->
+    <section class="product-filter">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label>分类:</label>
+                    <select id="category-filter">
+                        <option value="all">全部产品</option>
+                        <option value="textile">黎锦织物</option>
+                        <option value="pottery">黎族陶器</option>
+                        <option value="clothing">黎族服饰</option>
+                        <option value="accessories">黎族饰品</option>
+                        <option value="home">家居装饰</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>价格:</label>
+                    <select id="price-filter">
+                        <option value="all">全部价格</option>
+                        <option value="0-100">¥0 - ¥100</option>
+                        <option value="100-300">¥100 - ¥300</option>
+                        <option value="300-500">¥300 - ¥500</option>
+                        <option value="500+">¥500以上</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>排序:</label>
+                    <select id="sort-filter">
+                        <option value="default">默认排序</option>
+                        <option value="price-low">价格从低到高</option>
+                        <option value="price-high">价格从高到低</option>
+                        <option value="newest">最新上架</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品列表 -->
+    <section class="product-listing">
+        <div class="container">
+            <div class="product-grid">
+                <!-- 产品1 -->
+                <div class="product-card" data-category="textile" data-price="280">
+                    <div class="product-image">
+                        <img src="images/product1.jpg" alt="黎锦织物">
+                        <div class="product-tag">热销</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>传统黎锦香囊</h3>
+                        <p class="product-desc">采用传统工艺手工编织，图案寓意丰收与吉祥</p>
+                        <div class="product-meta">
+                            <span class="product-price">¥280</span>
+                            <a href="product-detail.html" class="btn-small">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 产品2 -->
+                <div class="product-card" data-category="pottery" data-price="380">
+                    <div class="product-image">
+                        <img src="images/product2.jpg" alt="黎族竹编">
+                    </div>
+                    <div class="product-info">
+                        <h3>黎族竹编风铃</h3>
+                        <p class="product-desc">以自然之音，组织生活宁静之美</p>
+                        <div class="product-meta">
+                            <span class="product-price">¥380</span>
+                            <a href="product-detail.html" class="btn-small">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 产品3 -->
+                <div class="product-card" data-category="clothing" data-price="580">
+                    <div class="product-image">
+                        <img src="images/product3.jpg" alt="黎族饰品">
+                        <div class="product-tag">新品</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>竹编黎锦耳饰</h3>
+                        <p class="product-desc">传统元素与现代设计的完美结合</p>
+                        <div class="product-meta">
+                            <span class="product-price">¥580</span>
+                            <a href="product-detail.html" class="btn-small">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 产品4 -->
+                <div class="product-card" data-category="accessories" data-price="180">
+                    <div class="product-image">
+                        <img src="images/product4.jpg" alt="黎族传统手链">
+                    </div>
+                    <div class="product-info">
+                        <h3>黎族传统手链</h3>
+                        <p class="product-desc">采用天然材料制作，寓意平安吉祥</p>
+                        <div class="product-meta">
+                            <span class="product-price">¥180</span>
+                            <a href="product-detail.html" class="btn-small">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 产品5 -->
+                <div class="product-card" data-category="home" data-price="480">
+                    <div class="product-image">
+                        <img src="images/product5.jpg" alt="黎族风格装饰画">
+                    </div>
+                    <div class="product-info">
+                        <h3>黎族风格装饰画</h3>
+                        <p class="product-desc">黎族传统图腾元素，为家居增添文化气息</p>
+                        <div class="product-meta">
+                            <span class="product-price">¥480</span>
+                            <a href="product-detail.html" class="btn-small">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 产品6 -->
+                <div class="product-card" data-category="textile" data-price="680">
+                    <div class="product-image">
+                        <img src="images/product6.jpg" alt="黎锦抱枕套">
+                    </div>
+                    <div class="product-info">
+                        <h3>黎锦抱枕套</h3>
+                        <p class="product-desc">传统黎锦工艺制作，色彩鲜艳图案精美</p>
+                        <div class="product-meta">
+                            <span class="product-price">¥680</span>
+                            <a href="product-detail.html" class="btn-small">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 产品7 -->
+                <div class="product-card" data-category="accessories" data-price="280">
+                    <div class="product-image">
+                        <img src="images/product7.jpg" alt="黎族风格项链">
+                        <div class="product-tag">限量</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>黎族风格项链</h3>
+                        <p class="product-desc">融合传统图案与现代设计，精致优雅</p>
+                        <div class="product-meta">
+                            <span class="product-price">¥280</span>
+                            <a href="product-detail.html" class="btn-small">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 产品8 -->
+                <div class="product-card" data-category="pottery" data-price="580">
+                    <div class="product-image">
+                        <img src="images/product8.jpg" alt="黎族陶艺花瓶">
+                    </div>
+                    <div class="product-info">
+                        <h3>黎族陶艺花瓶</h3>
+                        <p class="product-desc">手工制作，保留原始陶艺质感与纹理</p>
+                        <div class="product-meta">
+                            <span class="product-price">¥580</span>
+                            <a href="product-detail.html" class="btn-small">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分页 -->
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="next">下一页 &raquo;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部信息 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>黎藤薪火</h2>
+                    <p>非遗创新融合与公益拓展新模式</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="products.html">产品分类</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系方式</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 海南省海口市美兰区XXX路XX号</p>
+                    <p><i class="fas fa-phone"></i> 电话: 0898-XXXXXXXX</p>
+                    <p><i class="fas fa-envelope"></i> 邮箱: contact@liyunchengchuan.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 黎藤焕彩·爱心织梦. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 黎藤焕彩·爱心织梦</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>黎藤焕彩·爱心织梦</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="products.html">产品分类</a></li>
+                    <li><a href="about.html">黎族文化</a></li>
+                    <li><a href="about.html#team">团队介绍</a></li>
+                    <li><a href="contact.html" class="active">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 页面横幅 -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>联系我们</h1>
+            <p>我们期待与您沟通交流</p>
+        </div>
+    </section>
+
+    <!-- 联系信息 -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>地址</h3>
+                    <p>海南省海口市美兰区XXX路XX号</p>
+                    <p>黎韵传承文化中心</p>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>电话</h3>
+                    <p>客服热线: 0898-XXXXXXXX</p>
+                    <p>商务合作: 0898-XXXXXXXX</p>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>邮箱</h3>
+                    <p>客户服务: service@liyunchengchuan.com</p>
+                    <p>商务合作: business@liyunchengchuan.com</p>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>营业时间</h3>
+                    <p>周一至周五: 9:00 - 18:00</p>
+                    <p>周六至周日: 10:00 - 17:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系表单 -->
+    <section class="contact-form">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>给我们留言</h2>
+                    <p>如果您有任何问题、建议或合作意向，请填写以下表单，我们会尽快回复您。</p>
+                </div>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">您的姓名</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">电子邮箱</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">联系电话</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">主题</label>
+                        <select id="subject" name="subject">
+                            <option value="inquiry">产品咨询</option>
+                            <option value="feedback">意见反馈</option>
+                            <option value="cooperation">商务合作</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">留言内容</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn">提交留言</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 地图 -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">我们的位置</h2>
+            <div class="map-container">
+                <!-- 这里可以嵌入百度地图或高德地图 -->
+                <div class="map-placeholder">
+                    <img src="images/map.jpg" alt="地图">
+                    <div class="map-overlay">
+                        <p>点击加载地图</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">常见问题</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>如何购买产品？</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>您可以通过我们的官网直接购买产品，也可以前往我们的线下门店选购。我们接受支付宝、微信支付、银行卡等多种支付方式。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>产品是否支持退换？</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我们的产品支持7天无理由退换。如果您收到的产品有质量问题，请在收到商品后48小时内联系我们的客服。手工艺品可能存在细微的差异，这是手工制作的特点，不属于质量问题。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>如何保养黎锦产品？</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>黎锦产品建议手洗，水温不超过30℃，不可漂白，不可熨烫，阴凉处晾干。长期存放时，请保持干燥，避免阳光直射，可以放入防潮袋中保存。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>是否提供定制服务？</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>是的，我们提供产品定制服务。如果您有特殊需求，可以通过联系表单或直接致电我们的商务合作电话进行咨询。定制产品的生产周期通常为15-30天，具体时间取决于产品复杂度。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>如何了解更多黎族文化？</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>您可以访问我们网站的"黎族文化"页面，了解更多关于黎族历史、工艺和传统的信息。我们也会定期举办文化讲座和工艺展示活动，欢迎关注我们的公众号获取最新活动信息。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部信息 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>黎藤薪火</h2>
+                    <p>非遗创新融合与公益拓展新模式</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="products.html">产品分类</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系方式</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 海南省海口市美兰区XXX路XX号</p>
+                    <p><i class="fas fa-phone"></i> 电话: 0898-XXXXXXXX</p>
+                    <p><i class="fas fa-envelope"></i> 邮箱: contact@liyunchengchuan.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 黎藤焕彩·爱心织梦. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

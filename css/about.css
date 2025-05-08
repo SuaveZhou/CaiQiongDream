@@ -1,0 +1,688 @@
+/* 关于我们页面样式 */
+
+/* 页面横幅 */
+.page-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/about-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* 文化介绍 */
+.culture-intro {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.culture-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.culture-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.culture-image img {
+    width: 100%;
+    display: block;
+}
+
+.culture-text h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.culture-text p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.culture-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.feature-item h3 {
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+/* 品牌故事 */
+.brand-story {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    background-image: url('../images/pattern-bg.png');
+    background-size: 200px;
+    background-repeat: repeat;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.story-text h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.story-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.story-image img {
+    width: 100%;
+    display: block;
+}
+
+.story-timeline h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: var(--primary-color);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50%;
+}
+
+.timeline-item:nth-child(even) {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: 50%;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-date {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: -30px;
+}
+
+.timeline-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.timeline-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* 团队介绍 */
+.team-intro {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.team-member {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.member-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.05);
+}
+
+.member-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.member-info h3 {
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.member-title {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.member-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* 合作伙伴 */
+.partners {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+.partner-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.partner-item:hover {
+    transform: translateY(-5px);
+}
+
+.partner-item img {
+    max-width: 100%;
+    max-height: 80px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.partner-item:hover img {
+    filter: grayscale(0%);
+}
+
+/* 响应式设计 */
+@media (max-width: 992px) {
+    .culture-content, .story-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-item, .timeline-item:nth-child(even) {
+        padding-right: 0;
+        padding-left: 30px;
+        justify-content: flex-start;
+    }
+    
+    .timeline::before {
+        left: 0;
+    }
+    
+    .timeline-dot {
+        left: 0;
+    }
+    
+    .timeline-date {
+        left: 30px;
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-banner {
+        height: 200px;
+    }
+    
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+    
+    .culture-text h3, .story-text h3, .story-timeline h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .timeline-content {
+        width: 100%;
+    }
+    
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 黎族文化和品牌故事页面样式 */
+
+/* 页面通用样式 */
+.about-page {
+    padding-top: 80px;
+}
+
+.about-section {
+    padding: 60px 0;
+}
+
+.about-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 页面标题样式 */
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.page-title .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* 黎族文化部分 */
+.culture-section {
+    background-color: #f9f9f9;
+}
+
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.culture-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.culture-item:hover {
+    transform: translateY(-5px);
+}
+
+.culture-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.culture-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.culture-item:hover .culture-image img {
+    transform: scale(1.05);
+}
+
+.culture-content {
+    padding: 20px;
+}
+
+.culture-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.culture-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 品牌故事部分 */
+.story-section {
+    background-color: #fff;
+}
+
+.story-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.story-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #ddd;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-content {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.timeline-date {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4a7c59;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.timeline-content h3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.timeline-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .story-timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 70px;
+        padding-right: 0;
+        text-align: left;
+    }
+    
+    .timeline-date {
+        left: 30px;
+        transform: translateX(-50%);
+    }
+}
+
+/* 团队介绍部分样式 */
+.team-section {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.team-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.team-name, .team-overview {
+    margin-bottom: 40px;
+}
+
+.team-name h2, .team-overview h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.team-name h2:after, .team-overview h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #c41230;
+}
+
+.team-name p, .team-overview p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.team-pillars {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.pillar {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.pillar:hover {
+    transform: translateY(-5px);
+}
+
+.pillar h3 {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.pillar h3 i {
+    color: #c41230;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.pillar p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* 响应式调整 */
+@media (min-width: 768px) {
+    .team-pillars {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .team-name h2, .team-overview h2 {
+        font-size: 1.8rem;
+    }
+    
+    .pillar h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* 微信公众号推文卡片展示 */
+.wechat-articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.wechat-article-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+.wechat-article-card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+.wechat-article-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.wechat-article-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wechat-article-content h3 {
+    font-size: 1.2rem;
+    color: #c41230;
+    margin-bottom: 10px;
+}
+.wechat-article-content p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+.wechat-article-content .btn-small {
+    align-self: flex-start;
+    background: #c41230;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+.wechat-article-content .btn-small:hover {
+    background: #a00d23;
+}

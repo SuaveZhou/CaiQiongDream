@@ -1,0 +1,180 @@
+/* 轮播图样式 */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 轮播图容器横向排列 */
+.slider-container {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+    will-change: transform;
+    position: relative;
+    height: 100%;
+}
+
+/* 每个slide占满容器宽度 */
+.slide {
+    min-width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    position: relative;
+    opacity: 1;
+    display: block;
+}
+
+/* 删除这个冲突的类 */
+/* .slide.active {
+    display: block;
+} */
+
+/* 轮播图指示器样式 */
+.slider-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    z-index: 10;
+}
+
+/* 修改指示器为横线样式 */
+.slider-dot {
+    width: 30px;
+    height: 3px;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.slider-dot.active {
+    background-color: white;
+}
+
+/* 主横幅轮播图样式 */
+.hero-slider {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slider,
+.slider-container,
+.slide,
+.hero {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* 确保内容垂直居中 */
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+    margin-top: -45px;
+}
+
+.hero-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg2.jpg');
+}
+
+.hero-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg3.jpg');
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* 删除这些冲突的动画样式 */
+/* .slide {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+} */
+
+/* 视频背景样式 */
+.hero-video {
+    position: relative;
+    overflow: hidden;
+    background-color: #000; /* 视频加载前的背景色 */
+}
+
+.hero-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 确保视频覆盖整个区域 */
+    z-index: 1;
+}
+
+.hero-video .hero-content {
+    position: relative;
+    z-index: 2; /* 确保内容在视频上方 */
+    background-color: rgba(0, 0, 0, 0.3); /* 半透明背景增加文字可读性 */
+    padding: 30px;
+    border-radius: 8px;
+}
+
+
+/* 声音控制按钮 */
+.sound-toggle {
+    position: absolute;
+    bottom: 80px;
+    right: 30px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.sound-toggle:hover {
+    background: rgba(0, 0, 0, 0.7);
+}

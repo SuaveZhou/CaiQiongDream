@@ -1,0 +1,160 @@
+/* 响应式设计 */
+@media (max-width: 992px) {
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        background-color: white;
+        padding: 80px 30px;
+        transition: right 0.3s;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0 0 20px 0;
+    }
+
+    nav ul li a {
+        color: var(--text-color);
+        font-size: 1.2rem;
+    }
+
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .culture-intro .container {
+        flex-direction: column;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        padding: 10px 25px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .footer-content p {
+        font-size: 1rem;
+    }
+
+    .slider-prev,
+    .slider-next {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .hero-slider,
+    .slider,
+    .slider-container,
+    .slide,
+    .hero {
+        width: 100vw;
+        height: 100vh;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-slider {
+        height: 100vh;
+        min-height: 100vh;
+        margin-top: -70px; /* 在移动设备上调整偏移量 */
+    }
+
+    .hero-content {
+        margin-top: -30px; /* 在移动设备上调整内容位置 */
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .slider-prev {
+        left: 10px;
+    }
+    
+    .slider-next {
+        right: 10px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 5px 10px;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
